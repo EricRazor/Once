@@ -8,8 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class UserInfoViewController: UIViewController {
+    
+    
+    @IBOutlet weak var facebookLink: UITextField!
+    
+    
+    
+    @IBOutlet weak var twitterLink: UITextField!
+    
+    
+    
+    @IBOutlet weak var linkedInLink: UITextField!
+    
+    
+    
+    @IBOutlet weak var googlePlusLink: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +35,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
 

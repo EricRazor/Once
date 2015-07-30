@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7gY-Tb-EPB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Who do you want to connect with?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Who do you want to connect with?" id="BYZ-38-t0r" customClass="ViewController" customModule="Official_once" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,119 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Phone Or Email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GDD-T1-gsr">
+                                <rect key="frame" x="0.0" y="43" width="600" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QLB-hy-VON"/>
+                                    <constraint firstAttribute="height" constant="50" id="yYm-kd-1YD"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QLB-hy-VON"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.77092664349999995" blue="0.41182881030000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GDD-T1-gsr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="6Gp-9R-XLf"/>
+                            <constraint firstAttribute="centerX" secondItem="GDD-T1-gsr" secondAttribute="centerX" id="Pwx-VI-Plb"/>
+                            <constraint firstItem="GDD-T1-gsr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="V73-5p-1Yq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GDD-T1-gsr" secondAttribute="trailing" constant="-16" id="YyD-l9-Idz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GDD-T1-gsr" secondAttribute="trailing" constant="177" id="ZAQ-cd-0ZM"/>
+                            <constraint firstItem="GDD-T1-gsr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="177" id="ee6-ic-s4m"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZAQ-cd-0ZM"/>
+                                <exclude reference="ee6-ic-s4m"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="608" y="438"/>
+        </scene>
+        <!--Link applyer-->
+        <scene sceneID="LZz-PI-5P3">
+            <objects>
+                <viewController title="Link applyer" id="7gY-Tb-EPB" customClass="UserInfoViewController" customModule="Official_once" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ahA-FV-Zb3"/>
+                        <viewControllerLayoutGuide type="bottom" id="aMf-jD-uMJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pNe-95-m3P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFc-F2-Uyg">
+                                <rect key="frame" x="277" y="159" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kzY-9g-27D"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Facebook Link" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l8p-qY-5mH">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter URL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwi-fd-vwp">
+                                <rect key="frame" x="16" y="349" width="568" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Google+" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jp0-WT-696">
+                                <rect key="frame" x="16" y="477" width="568" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LinkedIn" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rgi-mP-JF8">
+                                <rect key="frame" x="16" y="413" width="568" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.45799237539999998" blue="0.46612060579999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jp0-WT-696" firstAttribute="trailing" secondItem="pNe-95-m3P" secondAttribute="trailingMargin" id="2ta-oX-KP9"/>
+                            <constraint firstItem="Rgi-mP-JF8" firstAttribute="trailing" secondItem="pNe-95-m3P" secondAttribute="trailingMargin" id="9zx-n6-uwI"/>
+                            <constraint firstItem="Rgi-mP-JF8" firstAttribute="leading" secondItem="pNe-95-m3P" secondAttribute="leadingMargin" id="Bfl-eZ-bWi"/>
+                            <constraint firstAttribute="centerY" secondItem="YFc-F2-Uyg" secondAttribute="centerY" constant="108" id="Kpg-LI-B7z"/>
+                            <constraint firstItem="Xwi-fd-vwp" firstAttribute="trailing" secondItem="pNe-95-m3P" secondAttribute="trailingMargin" id="Nb3-gz-cpH"/>
+                            <constraint firstItem="l8p-qY-5mH" firstAttribute="leading" secondItem="pNe-95-m3P" secondAttribute="leadingMargin" id="S9d-9u-fbP"/>
+                            <constraint firstItem="Xwi-fd-vwp" firstAttribute="leading" secondItem="pNe-95-m3P" secondAttribute="leadingMargin" id="TNr-z2-NeQ"/>
+                            <constraint firstItem="Jp0-WT-696" firstAttribute="leading" secondItem="pNe-95-m3P" secondAttribute="leadingMargin" id="TPN-QR-C41"/>
+                            <constraint firstItem="l8p-qY-5mH" firstAttribute="trailing" secondItem="pNe-95-m3P" secondAttribute="trailingMargin" id="qJI-cD-TY5"/>
+                            <constraint firstItem="YFc-F2-Uyg" firstAttribute="centerX" secondItem="pNe-95-m3P" secondAttribute="centerX" id="xvB-hN-qtB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookLink" destination="l8p-qY-5mH" id="iL4-VH-8Qs"/>
+                        <outlet property="googlePlusLink" destination="Jp0-WT-696" id="Zzf-HD-Ney"/>
+                        <outlet property="linkedInLink" destination="Rgi-mP-JF8" id="TDa-U4-eeI"/>
+                        <outlet property="twitterLink" destination="Xwi-fd-vwp" id="IBe-pc-hPy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLp-XQ-ptV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="472"/>
         </scene>
     </scenes>
 </document>
